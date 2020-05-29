@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    
+    <title>Components</title>
+    <style>
+        body{
+            font-family: "Microsoft JhengHei", Arial, serif;
+        }
+        /* carousel */
+        .carousel-item img{
+            object-fit: cover;
+        }
+
+        @media(max-width:575.98px){
+            .carousel{
+                height: auto !important;
+            }
+            .carousel-inner img{
+                height: auto !important;
+            }
+        }
+        /* bg color */
+        .bg-dark{
+            background-color:rgba(135, 206, 235, 0.8)!important;
+        }
+        /* navbar */
+        .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav{
+            color: forestgreen
+        }
+        .nav-link{
+            padding: 0;
+        }
+        .active{
+            font-weight: bolder;
+        }
+        .nav-link{
+            margin-bottom: 10px;
+        }
+        /* a tag style */
+        .a_style{
+            display: block;
+            color:#333;
+        }
+        .a_style:hover{
+            color:forestgreen
+        }
+        /* card */
+        .card{
+            box-shadow: 0 5px 10px #333;
+            background: #f0f8ff;
+        }
+        .card:hover{
+            transform: scale(1.1);
+            z-index: 999;
+        }
+        /* h5 */
+        h5{
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-dark">
+        <a class="navbar-brand"><img src="images/logo.png" width="40" height="40"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">首頁</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">最新消息</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">關於我們</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    <class class="container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="col">
+                <div id="carousel" class="carousel slide vh-100 bg-dark" data-ride="carousel" data-interval="2000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner h-100 bg-danger">
+                        <div class="carousel-item h-100 active"  data-interval="5000">
+                            <img src="images/carousel1.jpg" class="d-block w-100 h-100">
+                        </div>
+                        
+                        <div class="carousel-item h-100"  data-interval="5000">
+                            <img src="images/carousel2.jpg" class="d-block w-100 h-100">
+                        </div>
+                        <div class="carousel-item h-100"  data-interval="5000">
+                            <img src="images/carousel3.jpg" class="d-block w-100 h-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding: 30px;">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-4">
+                <div class="card h-100">
+                    <img src="images/natural.jpg"  class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">日曬</h5>
+                        <p class="card-text flex-fill">日曬法(Dry process/Natural method)是咖啡豆最古老、最原始的處理法。一千多年前，阿拉伯人就以此法處理咖啡。是將採收的咖啡櫻桃放置在露台上直接曝曬，直接接收陽光曝曬(大約需要27天-30天)，把水分從60%曬到只剩下12%左右完成。這個處理法，概念很簡單、不太花錢，但是有很多的變數與風險；有很長一段時間是用在處理品質不是這麼好的豆子上。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+                <div class="card h-100">
+                    <img src="images/washed.jpg"  class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">水洗</h5>
+                        <p class="card-text flex-fill">水洗法(Wet process/Washed method)是由荷蘭人於18世紀發明的技術，適合多雨的地區，雖然過程相當繁瑣，但卻是目前較為普遍的生豆處理法，佔約70%的咖啡總量。將採收的漿果以去果皮機將大部分的果肉從咖啡豆上分離，再將帶殼豆導引至一個乾淨的水槽裡，浸泡在水中進行發酵以徹底去除殘餘的果肉層。透過水處理，未熟豆及瑕疵豆會因為浮力的關係而被挑選出來，發酵的過程也比較好控制，因此風味上不像日曬豆有雜味，而是呈現明顯果酸、複雜度稍強以及更乾淨(沒有任何負面風味的存在，像是澀感或尖銳感)的杯中特質。但也是因為太過「乾淨」，風味的豐富度也稍弱。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+                <div class="card h-100">
+                    <img src="images/honey.jpg"  class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">蜜處理</h5>
+                        <p class="card-text flex-fill">蜜處理(Honey Process/Miel Process)的意思來自於曝曬前咖啡豆很黏的果膠層，黏的感覺如蜜一般；當咖啡果肉與咖啡豆分離時，外圍包覆著的果膠層經過曝曬，吸收空氣中的濕氣而使果膠層變黏。這裡的「蜜」是指咖啡果肉的黏膜層。採收後的果實一樣會以果皮機剝除外果皮，留著果肉經過日曬，讓果肉的甜度可以進入到豆子，又不用像日曬法花這麼長的時間。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-0" style="margin: 0 0 2% 0;">
+        <div class="row m-0">
+            <div class="col-12 col-md-6 col-lg-6 p-0">
+                <img src="https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/67742836_638321140024861_8003036356202725376_n.jpg?_nc_cat=100&_nc_sid=8024bb&_nc_oc=AQmX7g6l8Ll01IBCZCZeIunYY66ECz0rPuTxhG7fx04irqYzxfeQ8N5K_NW-n8JoQbw&_nc_ht=scontent.ftpe7-1.fna&oh=fa4764aa984f5f3aacee7ee49fbda5f2&oe=5EF68D71" alt="鹿篙咖啡莊園照片" style="width:100%;height: 100%;">
+            </div> 
+            <div class="col-12 col-md-6 col-lg-6 d-flex flex-row p-0" style="background:#e0ffff">
+                <div class="d-flex flex-column justify-content-center align-items-center" style="width:100%;">
+                    <h2>鹿篙咖啡莊園</h2>
+                    <p>地址：南投縣魚池鄉新城村香茶巷31-6號<br>隸屬台灣農林公司，是一座現行咖啡製作工廠，兼具咖啡園導覽巡禮的複合式休閒咖啡莊園。</p>
+                    <a href="https://www.facebook.com/LUGAOCAFE/?epa=SEARCH_BOX" class="btn btn-primary" style="margin-bottom: 10px;">更多資訊</a>
+                </div>
+            </div>  
+        </div>
+        <div class="row m-0">
+            <div class="col-12 col-md-6 col-lg-6 p-0 order-lg-2 order-md-2">
+                <img src="http://www.baishengcun.com.tw/resource/images/equipment/eq5.jpg" alt="百勝村咖啡莊園照片" style="width:100%;height: 100%;">
+            </div> 
+            <div class="col-12 col-md-6 col-lg-6 d-flex flex-row p-0 order-lg-1 order-md-1"  style="background:#e0ffff">
+                <div class="d-flex flex-column justify-content-center align-items-center" style="width:100%;">
+                    <h2>百勝村咖啡莊園</h2>
+                    <p>地址：南投縣國姓鄉北港村國姓路87-9號(糯米橋右側)<br>這間休閒民宿位於省道台 21 線旁的咖啡農場上，可欣賞群山環繞的景緻，距離北港溪糯米石橋 1 公里，距離中台禪寺的花園 15 公里。</p>
+                    <a href="https://www.facebook.com/Baishencoffee/" class="btn btn-primary" style="margin-bottom: 10px;">更多資訊</a>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <div class="container-fluid bg-dark p-0" style="color: #333; font-weight: bold;">
+        <div class="row m-0" style="padding: 2% 5% 2% 5%;">
+            <div class="col-6 col-md-3 col-lg-3 d-flex align-items-center justify-content-center p-0">
+                <div class="rounded-circle bg-white" style="width: 100px; height: 100px; text-align: center; line-height: 100px;">
+                    <img src="images/logo.png" width="75" height="75">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3 p-0">
+                <nav class="nav flex-column align-content-center">
+                    <h5>地址</h5>
+                    <a class="nav-link"><i class="fas fa-map-marker-alt">  243新北市泰山區貴子里致遠新村55之1號</i></a>
+                </nav>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3 p-0">
+                <nav class="nav flex-column align-content-center">
+                    <h5>官方網站</h5>
+                    <a class="nav-link a_style" href="https://www.ttch.com.tw/zh">台灣農林</a>
+                    <a class="nav-link a_style" href="http://www.baishengcun.com.tw//">百勝村咖啡莊園</a>
+                </nav>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3 p-0">
+                <nav class="nav flex-column align-content-center">
+                    <h5>聯絡方式</h5>
+                    <a class="nav-link"><i class="fas fa-envelope">  ldk58736@eoopy.com</i></a>
+                    <a class="nav-link"><i class="fas fa-phone-alt">  (04)62833222</i></a>
+                    <a class="nav-link"><i class="fas fa-fax">  (04)30264233</i></a>
+                </nav>
+            </div>
+            <div class="col-12" style="text-align:center">
+                <footer>&copy; Copyright 2020 YuLun</footer>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
